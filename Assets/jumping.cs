@@ -12,16 +12,16 @@ public class jumping : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) 
         {
-            rb.AddForce(new Vector2(rb.velocity.x, jump));
+            rb.velocity = Vector2.up * jump;
         }
 
         foreach(Touch touch in Input.touches)
         {
             if (touch.phase == TouchPhase.Began)
             {
-                rb.AddForce(new Vector2(rb.velocity.x, jump));
+                rb.velocity = Vector2.up * jump;
             }
         }
     }
