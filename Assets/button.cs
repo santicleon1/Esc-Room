@@ -9,7 +9,7 @@ public class button : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "button")
+        if (other.gameObject.tag == "Player")
         {
             buttonOff.SetActive(false);
             buttonOn.SetActive(true);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gate1 : MonoBehaviour
+public class gateCorrect : MonoBehaviour
 {
     public GameObject button;
     public GameObject gateL;
